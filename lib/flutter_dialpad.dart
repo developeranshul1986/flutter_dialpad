@@ -109,7 +109,7 @@ class _DialPadState extends State<DialPad> {
             padding: EdgeInsets.all(20),
             child: TextFormField(
               readOnly: true,
-              style: TextStyle(color: Colors.white, fontSize: sizeFactor / 2),
+              style: TextStyle(color: Colors.black, fontSize: sizeFactor / 2),
               textAlign: TextAlign.center,
               decoration: InputDecoration(border: InputBorder.none),
               controller: textEditingController,
