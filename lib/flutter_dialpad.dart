@@ -277,7 +277,7 @@ class _DialButtonState extends State<DialButton>
                                       Padding(
                                           padding: EdgeInsets.only(top: 8,),
                                           child: Text(
-                                            "1",
+                                            widget.title,
                                             style: TextStyle(
                                                 fontSize: screenSize.height * 0.0862069,
                                                 fontWeight: FontWeight.bold,
