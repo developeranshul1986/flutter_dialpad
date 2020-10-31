@@ -273,12 +273,11 @@ class _DialButtonState extends State<DialButton>
                                   )
                                 : (widget.title == "#"
                                   ? Column(
-                                    mainAxisAlignment: MainAxisAlignment.start,
                                     children: <Widget>[
                                       Padding(
-                                          padding: EdgeInsets.only(top: 2, bottom: 20),
+                                          padding: EdgeInsets.only(top: 8,),
                                           child: Text(
-                                            widget.title,
+                                            "1",
                                             style: TextStyle(
                                                 fontSize: screenSize.height * 0.0862069,
                                                 fontWeight: FontWeight.bold,
