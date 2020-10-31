@@ -277,7 +277,7 @@ class _DialButtonState extends State<DialButton>
                                       widget.title,
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                          fontSize: (widget.title == "*") &&
+                                          fontSize: (widget.title == "#") &&
                                                   widget.subtitle == null
                                               ? screenSize.height * 0.0862069
                                               : sizeFactor / 2,
