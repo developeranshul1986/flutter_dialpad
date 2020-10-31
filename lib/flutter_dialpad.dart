@@ -275,11 +275,12 @@ class _DialButtonState extends State<DialButton>
                                   ? Column(
                                     children: <Widget>[
                                       Padding(
-                                          padding: EdgeInsets.only(top: 8),
+                                          padding: EdgeInsets.only(top: 8, bottom: 12),
                                           child: Text(
                                             widget.title,
                                             style: TextStyle(
                                                 fontSize: screenSize.height * 0.0862069,
+                                                fontWeight: FontWeight.bold,
                                                 color: widget.textColor != null
                                                     ? widget.textColor
                                                     : Colors.white),
