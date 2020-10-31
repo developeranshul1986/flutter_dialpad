@@ -255,7 +255,7 @@ class _DialButtonState extends State<DialButton>
                                 ? Column(
                                     children: <Widget>[
                                       Padding(
-                                          padding: EdgeInsets.only(top: 8),
+                                          padding: EdgeInsets.only(top: widget.title == "#" ? 2 : 8),
                                           child: Text(
                                             widget.title,
                                             style: TextStyle(
@@ -264,7 +264,7 @@ class _DialButtonState extends State<DialButton>
                                                     ? widget.textColor
                                                     : Colors.white),
                                           )),
-                                      widget.title == "#" ? null : Text(widget.subtitle,
+                                      Text(widget.subtitle,
                                           style: TextStyle(
                                               color: widget.textColor != null
                                                   ? widget.textColor
