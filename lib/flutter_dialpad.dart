@@ -255,7 +255,7 @@ class _DialButtonState extends State<DialButton>
                                 ? Column(
                                     children: <Widget>[
                                       Padding(
-                                          padding: EdgeInsets.only(top: widget.title == "#" ? 2 : 8),
+                                          padding: EdgeInsets.only(top: 8),
                                           child: Text(
                                             widget.title,
                                             style: TextStyle(
@@ -271,7 +271,22 @@ class _DialButtonState extends State<DialButton>
                                                   : Colors.white))
                                     ],
                                   )
-                                : Padding(
+                                : (widget.title == "#"
+                                  ? Column(
+                                    children: <Widget>[
+                                      Padding(
+                                          padding: EdgeInsets.only(top: 8),
+                                          child: Text(
+                                            widget.title,
+                                            style: TextStyle(
+                                                fontSize: screenSize.height * 0.0862069,
+                                                color: widget.textColor != null
+                                                    ? widget.textColor
+                                                    : Colors.white),
+                                          )),
+                                    ],
+                                  )
+                                  :Padding(
                                     padding: EdgeInsets.only(top: 8),
                                     child: Text(
                                       widget.title,
@@ -283,7 +298,7 @@ class _DialButtonState extends State<DialButton>
                                           color: widget.textColor != null
                                               ? widget.textColor
                                               : Colors.white),
-                                    ))
+                                    )))
                             : Icon(widget.icon,
                                 size: sizeFactor / 2, color: widget.iconColor != null ? widget.iconColor : Colors.white)),
                   ))),
