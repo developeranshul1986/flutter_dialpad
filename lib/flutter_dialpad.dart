@@ -45,7 +45,7 @@ class _DialPadState extends State<DialPad> {
     "WXYZ",
     null,
     "+",
-    null
+    ""
   ];
 
   @override
@@ -264,7 +264,7 @@ class _DialButtonState extends State<DialButton>
                                                     ? widget.textColor
                                                     : Colors.white),
                                           )),
-                                      Text(widget.subtitle,
+                                      widget.title == "#" ? null : Text(widget.subtitle,
                                           style: TextStyle(
                                               color: widget.textColor != null
                                                   ? widget.textColor
@@ -272,7 +272,7 @@ class _DialButtonState extends State<DialButton>
                                     ],
                                   )
                                 : Padding(
-                                    padding: EdgeInsets.only(top: widget.title == "#" ? 1 : 8),
+                                    padding: EdgeInsets.only(top: 8),
                                     child: Text(
                                       widget.title,
                                       style: TextStyle(
