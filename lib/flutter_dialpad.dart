@@ -279,7 +279,7 @@ class _DialButtonState extends State<DialButton>
                                           child: Text(
                                             widget.title,
                                             style: TextStyle(
-                                                fontSize: screenSize.height * 0.0862069,
+                                                fontSize: sizeFactor / 2,
                                                 fontWeight: FontWeight.bold,
                                                 color: widget.textColor != null
                                                     ? widget.textColor
